@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(122, 97, 211);
+            color: blanchedalmond;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <!-- <p>Aqui vai o resultado</p> -->
+    <!-- <div>Clique em mim</div> -->
+    <br>
+    
+    <h2>Elemento de seleção</h2>
+        <br>
+        <p>Podemos selecionar qualquer elemento do html com seguinte comando: window.document.getElementsByTagName('p')[0] 
+            colocamos indice para especificar qual parágrafo queremos selcionar, pois sem ele selecionaria todos os elementos 
+            específicados('p') no html. Podemos também selcionar tags pelo seu id, classe, nome ou por um seletor:
+            <ol>
+                <li>ID: window.document.getElementsByID('nomeid')</li>
+                <li>CLASE: window.document.getElementsByClasseName('nomeclase')</li>
+                <li>Nome: window.document.getElementsByName('nome')</li>
+            </ol>
+        </p>
+        <br>
+        <p>Obs: A função inerText busca somente o texto, agora caso se quisermos
+            ter o texto com a formatção usamos innerHTML </p>
+    <p>Saida dos script:</p>
+    <script>
+        // Selecionando tags
+        var p1 = window.document.getElementsByTagName('p')[0]
+        // Escrevendo na tela o conteudo da variável
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        /* Mudando os estilos
+         var corpo = window.document.body
+         corpo.style.background = 'Black'
+        */
+        window.getElementsBy
+    </script>
+</body>
+</html>
