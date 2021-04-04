@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgba(42, 119, 42);
+            color: wheat;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        body {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+    <p>Os Eventos no DOM, nada mas são que ações que correm dentros das tags,
+        como por exemplo quando colocamos o mouse dentro de uma div, pode ocorer 
+        diversas ações como:
+        <ol>
+            <li>mouseenter = Quando o mouse entra na tag</li>
+            <li>mousemove = Quando é movido o mouse</li>
+            <li>click = Click</li>
+            <li>Entre outros...</li>
+        </ol>
+        E para poder tabalhar com esses eventos precisamos ultilizar as função dentro 
+        do JS.
+    </p>
+    <div id="area"  >
+        Interaja...
+    </div>
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('onmouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background ='green'
+        }
+    </script>    
+</body>
+</html>
