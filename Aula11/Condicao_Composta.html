@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Identificando Pessoas</h1>
+    Digite o seu país de origem: <input type="text" name="textn1" id="texto">
+    <input type="button" id="btn" onclick="identificador()" value="Consultar">
+
+    <div id="res">
+
+    </div>
+    <script>
+        function identificador() {
+            var texto = window.document.getElementById('texto')
+            var texto12 = String(texto.value)
+            if (texto12 != 'Brasil') {
+                res.innerHTML = `<p>Você é estrangeiro!</p>`
+            }else{
+                res.innerHTML = `<p>Você é basileiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
